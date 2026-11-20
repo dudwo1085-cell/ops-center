@@ -1,0 +1,8 @@
+sync_public.py
+__pycache__/
+*.log
+*.tmp
+*.ps1
+*.json.bak
+*.key
+*credentials*

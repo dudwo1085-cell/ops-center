@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220"><meta name="robots" content="noindex,nofollow">
+<title>통합 운영관리센터 · 모바일</title><link rel="stylesheet" href="style.css">
+</head><body><header><div class="head-inner"><div class="logo">OPS<span>·</span>CENTER</div>
+<div class="hero"><h1>통합 운영관리센터</h1><p>ChatGPT · Hermes · Windows · 내가 만든 프로젝트</p></div>
+<div class="tools"><span id="sync">자료 확인 중</span><button id="refresh" type="button">새로고침</button></div></div></header>
+<main><div class="alert"><strong>공개 조회 전용</strong> · 로그인 없이 운영 현황을 확인합니다. 개인정보·PC 내부 경로·실행 명령·메모는 게시하지 않습니다. 실제 작업 수정과 로컬 서비스 접속은 PC에서 진행합니다.</div>
+<section class="stats" id="stats"><div class="stat"><strong>–</strong><small>프로젝트</small></div><div class="stat"><strong>–</strong><small>예약·시작</small></div><div class="stat"><strong>–</strong><small>활성 등록</small></div><div class="stat"><strong>–</strong><small>웹서비스</small></div></section>
+<div class="toolbar"><div class="tabs" role="group" aria-label="화면 필터">
+<button data-tab="all" aria-pressed="true">전체</button><button data-tab="services">서비스</button><button data-tab="projects">프로젝트</button><button data-tab="tasks">예약작업</button></div>
+<input type="search" id="search" aria-label="검색" placeholder="프로젝트·서비스·작업 검색"></div>
+<section class="panel" id="servicesPanel"><div class="section-head"><h2>서비스 바로가기</h2><span id="serviceCount"></span></div><div class="grid" id="services"></div></section>
+<section class="panel" id="projectsPanel"><div class="section-head"><h2>프로젝트</h2><span id="projectCount"></span></div><div class="grid" id="projects"></div></section>
+<section class="panel" id="tasksPanel"><div class="section-head"><h2>예약 및 자동 시작</h2><span id="taskCount"></span></div><div class="stack" id="tasks"></div></section>
+<p class="footer">© 통합 운영관리센터 · 공개 요약판 · PC가 꺼져도 화면은 열리지만 최신 상태는 갱신되지 않을 수 있습니다.</p>
+</main><script src="app.js"></script></body></html>
